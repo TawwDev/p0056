@@ -1,5 +1,5 @@
 
-package Manager;
+package controller;
 import Model.Worker;
 import java.util.List;
 import java.util.Scanner;
@@ -26,14 +26,14 @@ public class Validation {
             System.out.print(msg);
             try{
                 double n = Double.parseDouble(sc.nextLine());
-                if(n >= min && n <= max) return n;
+                if(n > min && n <= max) return n;
             } catch(NumberFormatException nfe){
                 System.out.println("Please enter a real number in range: " + min + " to " + max);
             }
         }                
     }
     
-    public static String getCode (String msg, String err, List<Worker> wList, int mode){
+    public static String getId (String msg, String err, List<Worker> wList, int mode){
         String s;
         while(true){
             System.out.print(msg);

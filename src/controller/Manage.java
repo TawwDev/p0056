@@ -1,5 +1,5 @@
 
-package Manager;
+package controller;
 
 import Model.SalaryHistory;
 import Model.Worker;

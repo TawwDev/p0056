@@ -1,8 +1,8 @@
 
-package GUI;
+package view;
 
-import Manager.Manage;
-import Manager.Validation;
+import controller.Manage;
+import controller.Validation;
 import java.util.Scanner;
 
 
@@ -45,7 +45,6 @@ public class Menu {
                 case 5:
                     break;
             }
-        } while (choice != 5);
-        
+        } while (choice != 5);   
     }
 }
